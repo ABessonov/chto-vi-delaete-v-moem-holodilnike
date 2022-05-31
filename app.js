@@ -10,7 +10,7 @@ const FileStore = require('session-file-store')(session);
 
 const PORT = process.env.PORT ?? 3000;
 const addProductRouter = require('./routes/addProductRouter');
-
+const indexRouter = require('./routes/indexRouter');
 
 const app = express();
 hbs.registerPartials(path.join(process.env.PWD, 'views/partials'));
@@ -35,12 +35,17 @@ app.use(express.json());
 //   }),
 // );
 // app.use(checkSession);
-// app.use('/', indexRouter);
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
+
+// app.get('/', (req, res) => {
+//   res.render('index');
+// });
+
+app.use('/', indexRouter);
+app.use('/addProduct', addProductRouter);
 
 app.listen(PORT, () => {
   console.log('server start on', PORT);
 });
+
+// const data = Object.fromEntries(new FormData(createPost));

@@ -22,19 +22,19 @@ module.exports = {
     ];
     const products = [
       {
-        name: 'Tomato', value: 'new', user_id: '1', category_id: '3', createdAt: new Date(), updatedAt: new Date(),
+        name: 'tomato', value: 'new', user_id: '1', category_id: '3', createdAt: new Date(), updatedAt: new Date(),
       },
       {
-        name: 'Milk', value: 'old', user_id: '2', category_id: '1', createdAt: new Date(), updatedAt: new Date(),
+        name: 'milk', value: 'old', user_id: '2', category_id: '1', createdAt: new Date(), updatedAt: new Date(),
       },
       {
-        name: 'Ice_cream', value: 'new', user_id: '1', category_id: '2', createdAt: new Date(), updatedAt: new Date(),
+        name: 'ice_cream', value: 'new', user_id: '1', category_id: '2', createdAt: new Date(), updatedAt: new Date(),
       },
       {
-        name: 'Orange', value: 'new', user_id: '2', category_id: '4', createdAt: new Date(), updatedAt: new Date(),
+        name: 'orange', value: 'new', user_id: '2', category_id: '4', createdAt: new Date(), updatedAt: new Date(),
       },
       {
-        name: 'Banana', value: 'old', user_id: '1', category_id: '4', createdAt: new Date(), updatedAt: new Date(),
+        name: 'banana', value: 'old', user_id: '1', category_id: '4', createdAt: new Date(), updatedAt: new Date(),
       },
     ];
     const favourites = [

@@ -1,0 +1,8 @@
+<div class="card" id="card{{product.id}}">
+    <img src="/img/{{product.name}}.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text">{{product.category.name}}</p>
+    </div>
+    <button type="button" value="{{product.id}}" onclick="deleteProduct(this)" class="btn btn-danger">Съесть</button>
+  </div>

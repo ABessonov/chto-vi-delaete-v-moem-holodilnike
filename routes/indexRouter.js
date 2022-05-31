@@ -13,5 +13,9 @@ router.route('/')
   .delete(async (req, res) => {
     await products.destroy({ where: { id: req.body.id } });
     res.json();
+  })
+  .post(async (req, res) => {
+    const product = await products.findOne({ where: { name: req.body.productName } });
+    res.json(product);
   });
 module.exports = router;
